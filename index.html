@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп «Бородинский»</title>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -12,15 +12,15 @@
     <div class="container clearfix">
       <nav class="main-menu">
         <ul>
-          <li><a href="#" >Информация</a></li>
-          <li><a href="#" >Новости</a></li>
+          <li><a href="info.html" >Информация</a></li>
+          <li><a href="news.html" >Новости</a></li>
           <li><a href="price.html" >Прайс-лист</a></li>
           <li><a href="shop.html" >Магазин</a></li>
-          <li><a href="#" >Контакты</a></li>
+          <li><a href="contacts.html" >Контакты</a></li>
         </ul>
       </nav>
       <div class="user-block">
-        <a class="login" href="#">Вход</a>
+        <a class="login" href="login.html">Вход</a>
       </div>
     </div>
   </header>
@@ -68,7 +68,7 @@
               <time datetime="2015-09-19">19 сентября</time>
             </li>
           </ul>
-          <a href="#" class="btn btn-news">Все новости</a>
+          <a href="news.html" class="btn btn-news">Все новости</a>
         </section>
         <section class="content-column-right">
           <h2 class="content-column-title">Фотогалерея</h2>
@@ -98,8 +98,8 @@
               СБ — ВС: С 10:00 ДО 19:00
             </p>
           </div>
-          <a href="#" class="btn btn-map">Как проехать</a>
-          <a href="#" class="btn btn-feedback">Обратная связь</a>
+          <a href="map.html" class="btn btn-map">Как проехать</a>
+          <a href="feedback.html" class="btn btn-feedback">Обратная связь</a>
         </section>
         <section class="content-column-right">
           <div class="appointment-form">
@@ -125,7 +125,7 @@
         <p>
           БАРБЕРШОП «БОРОДИНСКИЙ» <br>
           АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Ул. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-          <a href="#">Как нас найти?</a> <br>
+          <a href="map.html">Как нас найти?</a> <br>
           ТЕЛЕФОН: +7 (495) 666-02-66
         </p>
       </div>
@@ -158,12 +158,13 @@
       <a href="#">Я забыл пароль!</a>
       <input type="submit" value="Войти">
     </form>
-    <button type="button">Закрыть</button> 
+    <button class="modal-content-close" type="button">Закрыть</button> 
   </div>
   <div class="modal-content-map">
     <img src="img/map.jpg" alt="Схема проезда" width="766" height="560">
-    <button type="button">Закрыть</button> 
+    <button class="modal-content-close" type="button">Закрыть</button> 
     <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177644!2d30.320889251791787!3d59.93879686895888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460469051725" width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

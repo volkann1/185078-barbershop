@@ -1,6 +1,6 @@
 
 body {
-  font: bold 14px/1.7143 "PT Sans Narrow", sans-serif;
+  font: bold 14px/1.7143 "PT Sans Narrow", Arial, sans-serif;
 
   min-width: 940px;
 
@@ -28,6 +28,7 @@ body {
 
 .main-header .main-menu {
   float: left;
+  max-width: 792px;
 }
 
 .main-header ul {
@@ -220,8 +221,8 @@ body {
 }
 
 .modal-content-field input {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 5px 40px 5px 15px;
 
@@ -322,11 +323,18 @@ body {
 }
 
 .modal-content button::before {
-  transform: rotate(45deg);
+  
+  -webkit-transform: rotate(45deg);
+  
+      -ms-transform: rotate(45deg);
+  
+          transform: rotate(45deg);
 }
 
 .modal-content button::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-content-map {
@@ -369,11 +377,15 @@ body {
 }
 
 .modal-content-map button::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-content-map button::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-content-map .interactive-map {
@@ -416,7 +428,9 @@ body {
   margin: 10px auto 28px;
 
   content: "";
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 
   background: #fff;
 }
@@ -540,7 +554,7 @@ body {
 }
 
 .gallery-prev {
-  font: bold 14px/1.7142 "PT Sans Narrow", sans-serif;
+  font: bold 14px/1.7142 "PT Sans Narrow", Arial, sans-serif;
 
   float: left;
 
@@ -555,7 +569,7 @@ body {
 }
 
 .gallery-next {
-  font: bold 14px/1.7142 "PT Sans Narrow", sans-serif;
+  font: bold 14px/1.7142 "PT Sans Narrow", Arial, sans-serif;
 
   float: left;
 
@@ -569,8 +583,9 @@ body {
 }
 
 .gallery button[disabled] {
-  opacity: .5;
   cursor: default;
+
+  opacity: .5;
 }
 
 .news {
@@ -614,7 +629,7 @@ body {
 }
 
 .appointment-form input {
-  font: bold 14px/1.7142 "PT Sans Narrow", sans-serif;
+  font: bold 14px/1.7142 "PT Sans Narrow", Arial, sans-serif;
 
   width: 106px;
   height: 24px;
@@ -628,17 +643,17 @@ body {
   background: #f9f6f3;
 }
 
-.appointment-form form input[type="text"]:nth-child(2),
-.appointment-form form input[type="tel"] {
+.appointment-form input[type="text"]:nth-child(2),
+.appointment-form input[type="tel"] {
   margin-right: 0;
 }
 
-.appointment-form form input[type="tel"] {
+.appointment-form input[type="tel"] {
   margin-bottom: 34px;
 }
 
 .appointment-form button {
-  font: bold 14px/1.7142 "PT Sans Narrow", sans-serif;
+  font: bold 14px/1.7142 "PT Sans Narrow", Arial, sans-serif;
 
   width: 300px;
   margin-top: -14px;
@@ -670,7 +685,7 @@ input:focus {
   margin-right: 90px;
 }
 
-.footer-contacts p{
+.footer-contacts p {
   margin: 0;
 }
 
@@ -826,7 +841,9 @@ input:focus {
   padding: 0;
 
   content: "";
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   vertical-align: top;
 
   background: #000;
@@ -956,7 +973,9 @@ input:focus {
   margin-right: 13px;
 
   content: "";
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   vertical-align: middle;
 
   background: #000;
@@ -965,8 +984,8 @@ input:focus {
 .inmer-content .promo-title {
   position: relative;
 
-  margin-bottom: 22px;
   margin-top: 38px;
+  margin-bottom: 22px;
 
   text-align: center;
 }
@@ -1019,7 +1038,9 @@ input:focus {
   margin-right: 12px;
 
   content: "";
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   vertical-align: middle;
 
   background: #000;
@@ -1044,10 +1065,11 @@ input:focus {
 }
 
 .inmer-content h3 {
-  margin-top: 60px;
-  margin-bottom: 30px;
   font-size: 20px;
   line-height: 1.2;
+
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .inmer-content h2 + h3 {
@@ -1059,6 +1081,12 @@ input:focus {
   line-height: 1.714;
 
   margin: 24px 0;
+}
+
+.inmer-content p a {
+  text-decoration: underline;
+
+  color: inherit;
 }
 
 .inmer-content table {
@@ -1078,6 +1106,7 @@ input:focus {
 .inmer-content .inner-column-left,
 .inmer-content .inner-column-right {
   float: left;
+
   width: 460px;
 }
 
@@ -1100,8 +1129,9 @@ input:focus {
 }
 
 .inmer-content .table-pices td:last-child {
-  text-align: center;
   width: 196px;
+
+  text-align: center;
 }
 
 .inmer-content .short-text {
@@ -1124,7 +1154,6 @@ input:focus {
   float: left;
 
   width: 240px;
-
   margin-top: -11px;
   margin-left: -4px;
 }
@@ -1217,8 +1246,8 @@ input:focus {
 .filter input[type="radio"] + label {
   position: relative;
 
-  margin-left: 43px;
   margin-bottom: 24px;
+  margin-left: 43px;
 }
 
 .filter fieldset:nth-child(2) {
@@ -1226,7 +1255,7 @@ input:focus {
 }
 
 .filter .btn {
-  font: bold 13px "PT Sans Narrow", sans-serif;
+  font: bold 13px "PT Sans Narrow", Arial, sans-serif;
 
   min-width: 112px;
   margin-top: 30px;
@@ -1380,4 +1409,10 @@ input:focus {
   background: #663d15;
 }
 
+img {
+  max-width: 100%;
+}
 
+.modal-content-show {
+  display: block;
+}
