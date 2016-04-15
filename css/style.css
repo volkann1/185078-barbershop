@@ -28,6 +28,7 @@ body {
 
 .main-header .main-menu {
   float: left;
+
   max-width: 792px;
 }
 
@@ -222,7 +223,7 @@ body {
 
 .modal-content-field input {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding: 5px 40px 5px 15px;
 
@@ -323,18 +324,15 @@ body {
 }
 
 .modal-content button::before {
-  
   -webkit-transform: rotate(45deg);
-  
-      -ms-transform: rotate(45deg);
-  
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal-content button::after {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .modal-content-map {
@@ -378,14 +376,14 @@ body {
 
 .modal-content-map button::before {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal-content-map button::after {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .modal-content-map .interactive-map {
@@ -418,6 +416,7 @@ body {
   display: block;
 
   text-align: center;
+  margin-top: 0;
 }
 
 .features-name::after {
@@ -429,8 +428,8 @@ body {
 
   content: "";
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 
   background: #fff;
 }
@@ -454,7 +453,7 @@ body {
 .index-content:nth-child(4) {
   margin-top: 36px;
   margin-bottom: 66px;
-  padding-bottom: 52px;
+  padding-bottom: 48px;
 }
 
 .content-column-left {
@@ -682,7 +681,7 @@ input:focus {
 
   width: 310px;
   margin-top: 8px;
-  margin-right: 90px;
+  margin-right: 88px;
 }
 
 .footer-contacts p {
@@ -701,14 +700,18 @@ input:focus {
 
   float: left;
 
-  width: 148px;
+  width: 196px;
   margin-right: 144px;
+  margin-top: 12px;
+  margin-left: -25px;
 
   text-align: center;
 }
 
-.footer-social p {
+.footer-social span {
   font-size: 14px;
+
+  display: block;
 
   margin-bottom: 20px;
 }
@@ -774,7 +777,7 @@ input:focus {
   float: right;
 
   width: 140px;
-  margin-top: -6px;
+  margin-top: 8px;
   margin-right: 4px;
 
   text-align: center;
@@ -786,6 +789,7 @@ input:focus {
 
 .footer-copyright .btn {
   padding: 9px 0 10px;
+  margin-top: 14px;
 }
 
 .footer-copyright .btn:hover,
@@ -842,8 +846,8 @@ input:focus {
 
   content: "";
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   vertical-align: top;
 
   background: #000;
@@ -974,8 +978,8 @@ input:focus {
 
   content: "";
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   vertical-align: middle;
 
   background: #000;
@@ -1039,8 +1043,8 @@ input:focus {
 
   content: "";
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   vertical-align: middle;
 
   background: #000;
