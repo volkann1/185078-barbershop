@@ -344,18 +344,21 @@ body {
   display: none;
 
   margin-right: -390px;
-  padding: 7px;
-
+  
   background: #fff;
   z-index: 30;
+  width: 766px;
+  height: 560px;
+  background: url(../img/map.jpg) 0 0 no-repeat;
+  border: 7px solid #ffffff;
 }
 
 .modal-content-map button {
   font-size: 0;
 
   position: absolute;
-  top: 4px;
-  right: -24px;
+  top: -2px;
+  right: -31px;
 
   border: none;
   outline: none;
@@ -390,7 +393,9 @@ body {
 
 .modal-content-map .interactive-map {
   position: absolute;
-  top: 7px;
+  top: 0;
+  left: 0;
+  max-width: 100%;
 }
 
 .features {
